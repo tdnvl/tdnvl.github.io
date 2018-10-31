@@ -31,7 +31,10 @@
           <img id="skymap" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossOrigin="anonymous">
           <!-- img id="backgroundInsideHouse" crossorigin="anonymous" src="./assets/inside-house.jpg" -->
       </a-assets>
-        <a-sky id="background-img" src="#skymap"></a-sky>
+    <a-entity id="sky"
+      geometry="primitive: sphere; radius: 500; phiLength: 360; phiStart: 0; thetaLength: 90"
+      material="shader: flat; side: back; height: 2048; src: #skymap; width: 2048"
+    ></a-entity>
     <!-- a-grid></a-grid -->
     <!-- a-tube path="5 0 5, 5 0 -5, -5 0 -5" radius="0.5" material="color: red"></a-tube -->
     <!-- a-ocean color="#388888" depth="100" width="100" density="10" speed="2"></a-ocean -->
